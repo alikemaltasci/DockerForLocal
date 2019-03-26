@@ -10,3 +10,5 @@
         - "50000:50000"
       volumes:
         - ./volumes/jenkins_home:/var/jenkins_home
+
+        
