@@ -8,11 +8,13 @@ Includes some docker-compose.yml files for not to install apps to our local envi
     ```bash
     docker-compose up -d
     ```
+
 * If you want to follow the logs, run below command
 
     ```bash
     docker-compose logs -f
-    ```    
+    ```
+
 * After you finish your work, you should run below command to stop the service(app)
 
     ```bash

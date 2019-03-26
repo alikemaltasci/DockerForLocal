@@ -15,3 +15,4 @@
 
 * Use the password retrieved in the previous step and continue
 
+Used image at [Jenkins Docker](https://hub.docker.com/r/jenkins/jenkins/)
