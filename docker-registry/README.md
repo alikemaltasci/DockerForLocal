@@ -1,18 +1,22 @@
-# Jenkins
+# Docker Registry
 
-* Run below command to start Jenkins
+* Run below command to start the service
 
     ```bash
     docker-compose up -d
     ```
 
-* Open [http://localhost:8181](http://localhost:8181)
-* Run below command to get `Administrator password` needed for the first login
+* If you want to follow the logs, run below command
 
     ```bash
-    ./print_admin_password.sh
+    docker-compose logs -f
     ```
 
-* Use the password retrieved in the previous step and continue
+* Open [http://localhost:50000/v2/_catalog](http://localhost:50000/v2/_catalog)
+* After you finish your work, you should run below command to stop the service(app)
 
-Used image at [Jenkins Docker](https://hub.docker.com/r/jenkins/jenkins/)
+    ```bash
+    docker-compose down
+    ```
+
+Used image at [DockerRegistry](https://hub.docker.com/_/registry)

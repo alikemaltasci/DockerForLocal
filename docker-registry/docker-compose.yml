@@ -1,14 +1,12 @@
-  version: "2"
-  
-  services:
+version: "2"
 
-    jenkins:
-      image: jenkins/jenkins:lts
-      restart: on-failure
-      ports:
-        - "8181:8080"
-        - "50000:50000"
-      volumes:
-        - ./volumes/jenkins_home:/var/jenkins_home
+services:
+  docker-registry:
+    image: registry:latest
+    restart: unless-stopped
+    ports:
+      - "50000:5000"
+    volumes:
+      - ./volumes/registry:/var/lib/registry
 
         
