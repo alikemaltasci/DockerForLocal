@@ -1,4 +1,4 @@
-# Docker Registry
+# Bitbucket Server
 
 * Run below command to start the service
 
@@ -12,11 +12,11 @@
     docker-compose logs -f
     ```
 
-* Open [http://localhost:50000/v2/_catalog](http://localhost:50000/v2/_catalog)
+* Open [http://localhost:7990/](http://localhost:7990/)
 * After you finish your work, you should run below command to stop the service(app)
 
     ```bash
     docker-compose down
     ```
 
-Used image at [DockerRegistry](https://hub.docker.com/_/registry)
+Used image at [Bitbucket Server](https://hub.docker.com/r/atlassian/bitbucket-server/)
